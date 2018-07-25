@@ -89,6 +89,95 @@
             margin-left: 2px;
         }
 
+        .clear {
+            clear: both;
+        }
+
+        #menu-bar-container {
+            background-color: #BB1919;
+            width: 100%;
+            height: 70px;
+        }
+
+        #menu-bar {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            padding: 0;
+            margin: 0;
+            color: white;
+            font-size: 40px;
+            font-weight: normal;
+            padding-top: 10px;
+            float: left;
+        }
+        
+        #local-news {
+            border: 1px #BB4545 solid;
+            float: right;
+            width: 209px;
+            height: 50px;
+            padding: 0 0 0 10px;
+            margin: 5px 10px 0 0;
+        }
+
+        #local-news a {
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            position: relative;
+            top: 7px;
+        }
+
+        #local-news a:hover {
+            text-decoration: underline;
+        }
+
+        #local-news img {
+            width: 30px;
+            height: 30px;
+            position: relative;
+            top: 15px;
+        }
+
+        #menu-bar-2-container {
+            background-color: #A91717;
+            width: 100%;
+
+        }
+
+        #menu-bar-2 {
+            width: 1000px;
+            margin: 0 auto;
+            height: 40px;
+        }
+
+        #menu-bar-2 a {
+            color: white;
+            text-decoration: none;
+            padding: 0 10px;
+            border-right: 1px solid #BB4545;
+            font-size: 14px;
+            position: relative;
+            top: 11px;
+        }
+
+        #menu-bar-2 a:hover {
+            text-decoration: underline;
+        }
+
+        .no-border {
+            border: none !important;
+        }
+
+        #down-arrow {
+            height: 10px;
+            position: relative;
+            top: 10px;
+        }
+
     </style>
 
 </head>
@@ -141,6 +230,51 @@
         </div>
 
     </div>
+
+
+    <div class="clear"></div>
+
+    <div id="menu-bar-container">
+
+        <div id="menu-bar">
+
+            <h1>NEWS</h1>
+            <div id="local-news">
+                <a href="">Find local news</a>
+                <img src="images/gps.png">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="clear"></div>
+
+    <div id="menu-bar-2-container">
+
+        <div id="menu-bar-2">
+
+            <a href="">Home</a>
+            <a href="">UK</a>
+            <a href="">World</a>
+            <a href="">Business</a>
+            <a href="">Politics</a>
+            <a href="">Tech</a>
+            <a href="">Science</a>
+            <a href="">Health</a>
+            <a href="">Education</a>
+            <a href="">Entertainment & Arts</a>
+            <a href="">Video & Audio</a>
+            <a href="" class="no-border">More</a>
+            <img id="down-arrow" src="images/more-arrow-2.png">
+
+        </div>
+
+
+    </div>
+
+
 
 </body>
 
