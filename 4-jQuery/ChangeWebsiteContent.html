@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First jQuery</title>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <style type="text/css">
+        #circle {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: green;
+            margin: 10px;
+        }
+
+        iframe {
+            height: 1000px;
+            width:  1000px;
+        }
+    </style>
+</head>
+<body>
+<div id="circle"></div>
+
+<p>This is some text</p>
+<iframe src="http://www.bing.com"></iframe>
+
+
+<script type="text/javascript">
+
+   /* $("#circle").click(function () {
+        $("p").html("#2019 Ganti Presiden");
+    });*/
+
+   /*$("#circle").click(function () {
+       alert($("p").html());
+   });*/
+
+   /*$("#circle").hover(function () {
+       alert($("p").html());
+   });*/
+
+   $("#circle").hover(function () {
+       $("iframe").attr("src", "http://www.detik.com")
+   });
+
+</script>
+
+</body>
+
+
+
+</html>
