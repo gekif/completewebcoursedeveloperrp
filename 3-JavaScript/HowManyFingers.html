@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>If Else Statement</title>
+</head>
+<body>
+
+<p>How many fingers am I Holding up?</p>
+<p><input type="text" id="guess"></p>
+
+<p><button id="checkGuess">Enter</button></p>
+
+<script type="text/javascript">
+
+     document.getElementById("checkGuess").onclick = function () {
+        var guessNumbers = Math.random();
+        guessNumbers *= 6;
+        guessNumbers = Math.floor(guessNumbers);
+
+        var guess = document.getElementById("guess").value;
+
+        if (guess == guessNumbers) {
+            alert('Of course the guess number your ' + guess + ' is matching with our guess number that is ' + guessNumbers);
+//            alert('Of course the guess number is matching us');
+        } else {
+            alert('your guess ' + guess + ' is not our number. But our guess number is ' + guessNumbers);
+//            alert('Nope our guess number is ' + guessNumbers);
+        }
+     };
+
+</script>
+
+</body>
+</html>
