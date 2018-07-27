@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrays</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+/*    var myArray = new Array();
+
+    myArray[0] = 'Kopi';
+    myArray[1] = 'Ayam Goreng';
+    myArray[2] = 'Astrob';
+
+    console.log(myArray);
+
+
+    var tweets = ['Selamat Pagi Sudah', 'Tobelo selalo', 'Tetet'];
+    console.log(tweets[1]);
+
+    tweets.push('Balayar Jaohh', 'Sio mama');
+    console.log(tweets);
+
+    // Remove item using splice
+    tweets.splice(1, 2);
+    console.log(tweets);
+
+    // Add item using splice
+    tweets.splice(1, 0, 'Kalopun duduk sandiri');
+    console.log(tweets);
+
+    // Update the array using splice
+    tweets.splice(0, 1, 'Anjing sudah');
+    console.log(tweets);
+
+    //Add multiple items
+    tweets.splice(1, 1, 'Hallo', 'Anjing kacili');
+    console.log(tweets);*/
+
+
+/**
+ * The example of mine to become understand the function of array splice
+ */
+
+var kicau = [1, 2, 3, 4, 5]; // Array Initiation
+
+// Push Array
+kicau.push(6); // 6 is pushed on last array. The result is 1,2,3,4,5,6
+
+// Remove Array
+kicau.splice(0, 1); // 1 is removed, The existing result is 2,3,4,5,6
+
+// Add Array
+kicau.splice(6, 0, 7); // 7 is added after 6, The existing result is 2,3,4,5,6,7
+
+//Update Array
+kicau.splice(4, 1, 8); // 6 is changed into 8 The existing result is 2,3,4,5,8,7
+
+//Add multiple array in array
+//kicau.splice(1, 0, 10, 11, 12, 13); // 11, 12, 13 is added before 3. The result is 2,10,11,12,13,3,4,5,8,7
+//kicau.splice(1, 1, 10, 11, 12, 13); // 11, 12, 13 is added and 3 is gone. The result is 2,10,11,12,13,4,5,8,7
+kicau.splice(1, 2, 10, 11, 12, 13); // 11, 12, 13 is added and 3 also 4 is gone. The result is 2,10,11,12,13,5,8,7
+
+
+// Print the log
+console.log(kicau);
+
+
+/**
+ * Explanation:
+ * object.splice(arg1, arg2, arg3)
+ * arg1: The position of array
+ * arg2: The position of added before or change
+ * arg3: The new value or added valuef
+ *
+ * */
+
+</script>
+
+</body>
+</html>
