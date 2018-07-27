@@ -6,5 +6,53 @@
 </head>
 <body>
 
+<div id="tweetDiv"></div>
+
+<script type="text/javascript">
+
+    // For Increment
+/*    for (var i = 0; i < 5; i++) {
+        alert('Number ' + i);
+    }*/
+
+    // For Decrement
+/*    for (var i = 5; i > 0; i--) {
+        alert('Number ' + i);
+    }
+    */
+    // Using Break
+    /*for (var i = 1; i > 0; i++) {
+        if (i === 15) {
+            break;
+        } else {
+            alert('Number ' + i);
+        }
+    }*/
+
+    // Displaying tweets
+//    var tweets = ['1', '2', '3', '4', '5'];
+//    var tweets = [1, 2, 3, 4, 5];
+
+    // Only display integer
+//    for (i = 0; i < 3; i++) {
+
+    // Display the array
+    /*for (i = 0; i < tweets.length; i++) {
+        alert(tweets[i]);
+    }*/
+
+    var tweetString = "";
+    var tweets = ['1', '2', '3'];
+
+    for (var i  = 0; i < tweets.length; i++) {
+        tweetString = tweetString + "<p>" + tweets[i] + "</p>";
+    }
+
+    document.getElementById("tweetDiv").innerHTML = tweetString;
+
+
+
+</script>
+
 </body>
 </html>
