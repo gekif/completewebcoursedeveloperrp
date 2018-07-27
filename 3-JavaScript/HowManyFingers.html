@@ -14,13 +14,15 @@
 <script type="text/javascript">
 
      document.getElementById("checkGuess").onclick = function () {
-        var guessNumbers = Math.random();
-        guessNumbers *= 6;
-        guessNumbers = Math.floor(guessNumbers);
+//        var guessNumbers = Math.random();
+//        guessNumbers *= 6;
+//        guessNumbers = Math.floor(guessNumbers);
 
-        var guess = document.getElementById("guess").value;
+         var guessNumbers = Math.floor(Math.random() * 6);
 
-        if (guess == guessNumbers) {
+//        var guess = document.getElementById("guess").value;
+
+        if (document.getElementById("guess").value == guessNumbers) {
             alert('Of course the guess number your ' + guess + ' is matching with our guess number that is ' + guessNumbers);
 //            alert('Of course the guess number is matching us');
         } else {
