@@ -198,20 +198,20 @@ h3 a:hover {
     float: left;
 }
 
-#article-summary img {
+.clock {
     height: 15px;
     position: relative;
-    top:1px;
+    top: 1px;
 }
 
-#topic-link {
+.topic-link {
     text-decoration: none;
     color: #A91717;
     border-left: 1px solid #CCCCCC;
     padding-left: 10px;
 }
 
-#article-summary a:hover {
+.topic-link:hover {
     color: #1167A8;
 }
 
@@ -220,9 +220,9 @@ h3 a:hover {
     text-decoration: none;
 }
 
-
-#date {
+.date {
     padding-right: 10px;
+    color: #5A5A5A;
 }
 
 #article-container {
@@ -240,4 +240,48 @@ h3 a:hover {
 #article-hr {
     border-top: 1px solid #A91717;
     width: 50px;
+}
+
+#watch-listen {
+    margin-left: 20px;
+    width: 280px;
+    float: right;
+}
+
+h4 {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.article-side-image {
+    float: left;
+    width: 90px;
+    margin-right: 10px;
+}
+
+.watch-listen-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.watch-listen-link:hover {
+    color: #1167A8;
+}
+
+.side-article {
+    float: right;
+    width: 180px;
+    position: relative;
+    top: -18px;
+}
+
+.no-border {
+    border-left: none;
+    padding: 0;
+}
+
+.border-right {
+    border-right: 1px solid #CCCCCC;
 }
