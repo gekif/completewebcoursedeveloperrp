@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Variables</title>
+</head>
+<body>
+
+<input type="text" id="textInput">
+
+<button id="textChanger">Change the text</button>
+
+<p id="text">This is some text</p>
+
+<script type="text/javascript">
+
+    var a = 5;
+    var name = 'Fikar';
+
+    a = 20;
+
+//    alert(a);
+//    alert(name);
+
+    document.getElementById("textChanger").onclick = function () {
+        // Initiation
+        var textEntered = "";
+
+        // Get the element of the text input
+        textEntered = document.getElementById("textInput").value;
+
+        // Display the text input on paragraph
+        document.getElementById("text").innerHTML = textEntered;
+    };
+
+
+
+</script>
+
+</body>
+</html>
