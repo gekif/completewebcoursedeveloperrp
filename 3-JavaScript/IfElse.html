@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>If Else Statement</title>
+</head>
+<body>
+
+<p>What is the magic word?</p>
+<p><input type="text" id="magicWord"></p>
+
+<p><button id="checkMagicWord">Enter</button></p>
+
+<script type="text/javascript">
+
+/*    var x = 1;
+
+    if (x == 1) {
+        alert('x is 1');
+    } else {
+        alert('x is not 1');
+    }*/
+
+    document.getElementById("checkMagicWord").onclick = function () {
+//        alert('Hi');
+        var magicWordEntered = document.getElementById("magicWord").value;
+//        alert(magicWordEntered);
+        var magicWord = 'abradacadabra';
+
+        if (magicWordEntered == magicWord ) {
+            alert('Open sesame');
+        } else {
+            alert('Wrong magic word');
+        }
+    };
+</script>
+
+</body>
+</html>
