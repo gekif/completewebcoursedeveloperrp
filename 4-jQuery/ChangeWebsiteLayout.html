@@ -35,19 +35,27 @@
 <script type="text/javascript">
 
 /*    $("#circle").click(function () {
+        // Change the width
 //        $("#circle").css("width", "500px");
 
+        // Change the background color
 //        $("#circle").css("background-color", "red");
 
+        // To know the width of the bodt
 //        alert("The Width is " + $("body").css("width"));
-
-        alert("The Width is " + $("body").css("width"));
     });*/
 
 $("div").click(function () {
+        // Can vanish the text
 //    $(this).css("display", "none");
 
+        // To know id when it is clicked
 //    alert("You clicked on a " + $(this).attr("id"));
+
+    /**
+     * Using this to globally select the id
+     * The result is circle else is square
+     */
 
     if ($(this).attr("id") == "circle") {
         alert("You clicked on a circle");
