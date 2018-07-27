@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+</head>
+<body>
+
+    <p id="text">Hello World</p>
+    <button id="myButton">Change Text</button>
+
+    <p id="secondParagraph">JavaScript is ...</p>
+    <button id="myButton2">Append Text</button>
+
+    <p id="emptyParagraph"></p>
+    <button id="myButton3">Create Text</button>
+
+    <p id="moreText">This is some text</p>
+    <button id="myButton4">Style Text</button>
+
+    <script type="text/javascript">
+
+        document.getElementById("myButton").onclick = function () {
+
+            // Click button to change the text of Hello World
+            document.getElementById("text").innerHTML = "Hello Fikar!!!";
+        };
+
+
+        document.getElementById("myButton2").onclick = function () {
+
+            // Append the current element
+            document.getElementById("secondParagraph").innerHTML = "I Think " + document.getElementById("secondParagraph").innerHTML + " awesome";
+        };
+
+
+        document.getElementById("myButton3").onclick = function () {
+
+            // Appearing the blank element
+            document.getElementById("emptyParagraph").innerHTML = "<h1>Hey it's appear</h1>";
+        };
+
+
+        document.getElementById("myButton4").onclick = function () {
+
+            // Changing font color
+//            document.getElementById("moreText").style.color = "red";
+
+            // Changing font size
+//            document.getElementById("moreText").style.fontSize = "50px";
+
+            // Disappear the font
+            document.getElementById("moreText").style.display = "none";
+        };
+
+    </script>
+
+</body>
+
+</html>
