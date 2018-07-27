@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First jQuery</title>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <style type="text/css">
+        #circle {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: green;
+            margin: 10px;
+        }
+
+        .square {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="circle"></div>
+<div class="square" id="square1"></div>
+<div class="square" id="square2"></div>
+
+<script type="text/javascript">
+
+    $("#circle").click(function () {
+        alert('Circle is clicked');
+    });
+
+    $("#square1").click(function () {
+        alert('Square 1 is clicked');
+    });
+
+    $("#square2").click(function () {
+        alert('Square 2 is clicked');
+    });
+
+//    $("div").click(function () {
+//        alert('Div is clicked')
+//    });
+
+</script>
+
+</body>
+
+
+
+</html>
