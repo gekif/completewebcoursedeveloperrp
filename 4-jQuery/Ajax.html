@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX Demo</title>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    // Get the file via Ajax
+//    $.get("info.txt", function (data) {
+//        alert(data);
+//    });
+
+    $.ajax("info.txt").done(function (data) {
+        alert(data);
+    }).fail(function () {
+        alert("Could not get data");
+    });
+
+</script>
+
+</body>
+</html>
