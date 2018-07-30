@@ -7,6 +7,8 @@
 </head>
 <body>
 
+<p></p>
+
 <script type="text/javascript">
 
     // Get the file via Ajax
@@ -14,10 +16,20 @@
 //        alert(data);
 //    });
 
-    $.ajax("info.txt").done(function (data) {
+    /*$.ajax("info.txt").done(function (data) {
         alert(data);
     }).fail(function () {
         alert("Could not get data");
+    });*/
+
+    // Beautty
+    $.ajax("info.txt")
+        .done(function (data) {
+//            alert(data);
+             $("p").html(data);
+    })
+        .fail(function () {
+             alert("Could not get data");
     });
 
 </script>
