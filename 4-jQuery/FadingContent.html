@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First jQuery</title>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <style type="text/css">
+
+        /*#circle {*/
+            /*height: 200px;*/
+            /*width: 200px;*/
+            /*border-radius: 50%;*/
+            /*background-color: green;*/
+            /*margin: 10px;*/
+        /*}*/
+
+        /*.square {*/
+            /*height: 200px;*/
+            /*width: 200px;*/
+            /*background-color: red;*/
+            /*margin: 10px;*/
+        /*}*/
+
+        #hiddenText {
+            display: none;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+<!--<div id="circle"></div>-->
+
+<!--<div class="square"></div>-->
+
+<!--<div class="square"></div>-->
+
+<!--<p id="text">This is some text</p>-->
+<!--<button id="fadeOut">Fade Out Text</button>-->
+
+<!--<p id="hiddenText">This text will be hidden</p>-->
+<!--<button id="fadeIn">Fade In Text</button>-->
+
+<p id="text">This is some text</p>
+<button id="toggle">Toggle</button>
+
+
+<script type="text/javascript">
+
+//$("div").click(function () {
+//    // Fading away
+////    $(this).fadeOut();
+//
+//    // Disappear yeay
+////    $(this).hide();
+//
+//    // Fadeout with argument
+////    $(this).fadeOut("slow");
+//
+//    // Fadeout with argument with function
+////    $(this).fadeOut("slow", function () {
+////        alert("FadeOut has finished");
+////    });
+//
+//});
+
+//$("#fadeOut").click(function () {
+//    $("#text").fadeOut();
+//});
+//
+//$("#fadeIn").click(function () {
+//    $("#hiddenText").fadeIn();
+//});
+
+var display = true;
+//$("#text").css("display") == "none"
+
+$("#toggle").click(function () {
+    if (display) {
+            $("#text").fadeOut(function () {
+                display = false;
+            });
+    } else {
+            $("#text").fadeIn(function () {
+                display = true;
+            });
+    }
+});
+
+
+
+
+
+
+</script>
+
+</body>
+
+
+
+</html>
