@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+
+    <title>Modals Pop Over Tooltips</title>
+</head>
+<body>
+
+
+<!--Modal: Live Demo -->
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-name="Fikar">
+    <!--Click Here-->
+    Email Fikar
+</button>
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-name="RisRis">
+    <!--Click Here-->
+    Email RisRis
+</button>
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-name="Lala">
+    <!--Click Here-->
+    Email Lala
+</button>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Halo Fikar</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                My Name Is Fikar
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Pop Over-->
+
+<!--<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>-->
+
+<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" data-placement="bottom" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?" >Click to toggle popover</button>
+
+
+
+<!-- Tool Tip-->
+
+<!--<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on top">-->
+    <!--Tooltip on top-->
+<!--</button>-->
+
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on top" id="myToolTip">
+    Tooltip on top
+</button>
+
+
+
+<script type="text/javascript" src="../4-jQuery/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<!--<script type="text/javascript" src="bootstrap4/js/bootstrap.bundle.min.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/popper.min.js"></script>-->
+<script type="text/javascript" src="bootstrap4/js/bootstrap.min.js"></script>
+<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>-->
+
+
+<script type="text/javascript">
+
+    // JQuery Selector to manage modal
+    $('#exampleModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget);
+        var recipient = button.data('name');
+//        alert(recipient);
+        var modal = $(this);
+        modal.find('.modal-title').text('New message to ' + recipient);
+        modal.find('.modal-body input').val(recipient);
+    });
+
+//    $('#close').click(function () {
+//        alert("The Modal is Closed");
+//    })
+
+//    $("#exampleModal").on("hide.bs.modal", function (event) {
+    $("#exampleModal").on("hidden.bs.modal", function (event) {
+//        alert("The modal is close");
+        console.log("The modal is close");
+    });
+
+
+    $('[data-toggle="popover"]').popover();
+
+    $('[data-toggle="tooltip"]').tooltip();
+
+    $("#myToolTip").on('shown.bs.tooltip', function () {
+//        alert('Tooltip Displayed');
+    });
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
