@@ -1,5 +1,6 @@
 .idea/
 *.jpg
+*.png
 images/
 jquery-3.3.1.js
 *.txt
