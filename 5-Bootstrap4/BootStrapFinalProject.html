@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+
+        .jumbotron {
+            background-image: url("suasana.jpg");
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #email {
+            width: 300px;
+        }
+
+        .jelas {
+            color: black;
+            font-weight: bold;
+        }
+
+        #makan {
+            color: white;
+        }
+
+        #appSummary {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        #appStoreIcon {
+            width: 200px;
+        }
+
+        #footer {
+            background-color: aqua;
+            padding-top: 150px;
+            margin-top: 50px;
+            text-align:  center;
+            padding-bottom: 150px;
+
+        }
+
+        body {
+            position: relative;
+        }
+
+    </style>
+
+    <title>Bootstrap 4 Final Project</title>
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="150">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top" id="navbar">
+    <a class="navbar-brand" href="#">Fikar App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#jumbotron">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">Tentang Aku</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#footer">Unduh Aplikasi</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="email" placeholder="Email">
+            <input class="form-control mr-sm-2" type="password" placeholder="Password">
+            <button class="btn btn-success" type="submit">Login</button>
+        </form>
+    </div>
+</nav>
+
+
+<div class="jumbotron" id="jumbotron">
+    <h1 class="display-4">Aplikasi Fikar</h1>
+    <p class="lead jelas">Ini kenapa kamyu kudu donlot aplikasi akyuuu</p>
+    <hr class="my-4">
+    <p class="jelas" id="makan">Pengen kepoin akyuu. Gabung aja</p>
+    <form>
+        <div class="form-row align-items-center">
+            <div class="col-auto">
+                <label class="sr-only" for="email">Email</label>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">@</div>
+                    </div>
+                    <input type="text" class="form-control" id="email" placeholder="Email Koe">
+                </div>
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-2">Daptar</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="container" id="about">
+    <div class="row" id="appSummary">
+        <h1> Yes it is</h1>
+        <p class="lead">Summary, once your apps is awesome</p>
+    </div>
+</div>
+
+<div class="card-deck">
+    <div class="card">
+        <img class="card-img-top" src="bart.png" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title"> <i class="fa fa-birthday-cake"></i>Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="bart.png" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title"><i class="fa fa-birthday-cake"></i>Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="bart.png" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title"><i class="fa fa-birthday-cake"></i>Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" id="footer">
+    <div class="row">
+        <h2> Download the app gan</h2>
+        <p class="lead">Kenapa kudu donlot lah suu</p>
+        <p><a href=""><img id="appStoreIcon" src="hehe.jpg"></a></p>
+    </div>
+
+</div>
+
+
+
+<script type="text/javascript" src="../4-jQuery/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<!--<script type="text/javascript" src="bootstrap4/js/bootstrap.bundle.min.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/popper.min.js"></script>-->
+<script type="text/javascript" src="bootstrap4/js/bootstrap.min.js"></script>
+<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>-->
+
+
+<script type="text/javascript">
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
