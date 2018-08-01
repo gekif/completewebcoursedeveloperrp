@@ -24,7 +24,8 @@ if ($_POST) {
         }
     }
 
-    if ($_POST['name'] == "") {
+//    if ($_POST['name'] == "") {
+    if ($isKnown == false) {
 		echo '<h1>Please insert the name woiii</h1>';
 	} else if ($isKnown) {
         echo '<h1>Hi There ' . $_POST['name'] . '!!!</h1>';
