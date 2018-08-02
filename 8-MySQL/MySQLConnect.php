@@ -6,4 +6,4 @@ const PASSWORD = 'password';
 const DB = 'completecourse';
 
 
-mysqli_connect(HOST, USER, PASSWORD, DB);
+$conn = mysqli_connect(HOST, USER, PASSWORD, DB);
