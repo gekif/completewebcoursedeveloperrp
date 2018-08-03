@@ -42,21 +42,21 @@ if (array_key_exists("submit", $_POST)) {
 
         if (isset($_POST['signUp']) == '1') {
 
-            $query = "SELECT id FROM diary WHERE email = '" . mysqli_real_escape_string($conn, $_POST['email']) . "' LIMIT 1";
+            $query = "SELECT id FROM simulation WHERE email = '" . mysqli_real_escape_string($conn, $_POST['email']) . "' LIMIT 1";
 
             $result = mysqli_query($conn, $query);
 
             if (mysqli_num_rows($result) > 0) {
                 $error .= "<h1 style='color: red;'>Email address is taken</h1>";
             } else {
-                $query = "INSERT INTO diary (email, password) VALUES('" .
+                $query = "INSERT INTO simulation (email, password) VALUES('" .
                     mysqli_real_escape_string($conn, $_POST['email']) . "', '" .
                     mysqli_real_escape_string($conn, $_POST['password']) . "')";
 
                 if (!mysqli_query($conn, $query)) {
                     $error .= "<li><h1 style='color: red;'>Could not sign you up - please try again</h1></li>";
                 } else {
-                    $query = "UPDATE diary SET password = '" . md5(md5(mysqli_insert_id($conn)) . $_POST['password']) . "'
+                    $query = "UPDATE simulation SET password = '" . md5(md5(mysqli_insert_id($conn)) . $_POST['password']) . "'
                         WHERE id = " . mysqli_insert_id($conn) . " LIMIT 1";
                     mysqli_query($conn, $query);
 
@@ -73,7 +73,7 @@ if (array_key_exists("submit", $_POST)) {
         } else {
 //            echo "Logging....";
 //            print_r($_POST);
-            $query = "SELECT * FROM diary WHERE email= '" . mysqli_real_escape_string($conn, $_POST['email']) . "'";
+            $query = "SELECT * FROM simulation WHERE email= '" . mysqli_real_escape_string($conn, $_POST['email']) . "'";
 
             $result = mysqli_query($conn, $query);
             $row = mysqli_fetch_array($result);
