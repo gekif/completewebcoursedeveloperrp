@@ -8,4 +8,5 @@ jquery-ui-1.12.1/
 bootstrap4/
 bootstrapweb/
 !background.jpg
-.gitignore
+*.gitignore
+*.mp4
