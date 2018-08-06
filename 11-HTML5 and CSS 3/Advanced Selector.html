@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 3: Advanced Selector</title>
+    <style>
+
+        h1 {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+
+        #blue {
+            font-size: 200%;
+        }
+
+        div p {
+            font-weight: bold;
+        }
+
+        /* change under h3*/
+        h3 ~ p {
+            text-decoration: underline;
+        }
+
+        /* paragraph following h3*/
+        h3 + p {
+            font-size: 150%;
+        }
+
+        a[target] {
+            color: yellow;
+        }
+
+        /*a[href="https://www.facebook.com"] {*/
+        a[href="facebook"] {
+            font-size: 150%;
+        }
+
+    </style>
+</head>
+
+<!--
+
+*= - Begins with
+$= - End with
+~= - Has the value between two spaces
+|= - Has the value separated by hyphens (-)
+
+
+-->
+
+<body>
+
+<h1>Heading</h1>
+
+<div>
+    <h3>H3 element</h3>
+    <p class="green">Paragraph</p>
+    <p>Inside DiV</p>
+    <!--<a id="blue" href="https://www.facebook.com" target="_blank">Link</a>-->
+    <a id="blue" href="" target="_blank">Link</a>
+</div>
+
+<div>
+    <h3>Kenapa</h3>
+    <p>Yusman roy</p>
+</div>
+
+<p>Outside DiV</p>
+
+<!--<a href="">Another Link</a>-->
+<a href="https://www.facebook.com">Another Link</a>
+</body>
+</html>
