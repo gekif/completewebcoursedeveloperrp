@@ -5,51 +5,31 @@
     <title>CSS 3: Transformation Animations</title>
     <style>
 
-        #gradient {
-            width: 500px;
-            height: 200px;
-            background-color: blue;
-            /*background: linear-gradient(white, blue);*/
-            /*background: linear-gradient(to right, white, blue);*/
-            /*background: linear-gradient(to bottom right, white, blue);*/
-            background: linear-gradient(to top left, white, red, green, blue);
-        }
-        
-        #radial-gradient {
-            width: 500px;
-            height: 200px;
-            background-color: blue;
-            background: radial-gradient(white, blue);
-        }
-
-        #radial-gradient2 {
-            width: 500px;
-            height: 200px;
-            background: linear-gradient(to bottom left, green, yellow);
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 10px;
+            transition: 1s ease-in-out;
+            /*transition: 1s linear;*/
+            /*transition: 1s ease-in;*/
+            font-family: "Arial";
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size:  200%;
         }
 
-        h2 {
-            /*text-shadow: 2px 2px green;*/
-            /*text-shadow: 2px 2px 4px green;*/
-
-            /*text-shadow: 2px 2px 4px green;
-            color: white;*/
-            text-shadow: 2px 2px 4px green, -5px -5px 4px yellow;
+        #box:hover {
+            /*transform: translate(50px, 50px);*/
+            /*transform: rotate(45deg);*/
+            /*transform: scale(2, 4);*/
+            /*transform: skew(20deg, 30deg);*/
+            /*transform: rotateX(180deg);*/
+            /*transform: rotateY(180deg);*/
+            transform: rotateZ(180deg);
         }
-
-        h3 {
-            text-shadow:  0 0 5px red;
-        }
-
-        #shadow {
-            width: 200px;
-            height: 200px;
-            /*box-shadow: 3px 3px;*/
-            /*box-shadow: 3px 3px grey;*/
-            box-shadow: 12px 12px 6px grey;
-            background-color: antiquewhite;
-        }
-
 
     </style>
 </head>
@@ -57,15 +37,7 @@
 
 <body>
 
-<h2>This text will have a shadow</h2>
-
-<h3>This text will have glow</h3>
-
-<div id="shadow"></div>
-
-<div id="gradient"><h1>This is a gradient</h1></div>
-<div id="radial-gradient"></div>
-<div id="radial-gradient2"></div>
+<div id="box">Box war</div>
 
 
 </body>
