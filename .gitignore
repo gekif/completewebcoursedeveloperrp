@@ -10,3 +10,4 @@ bootstrapweb/
 !background.jpg
 *.gitignore
 *.mp4
+appjs/
