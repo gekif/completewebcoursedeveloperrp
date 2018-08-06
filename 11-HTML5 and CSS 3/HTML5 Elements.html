@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 5 Elements</title>
+
+    <script>
+        document.createElement("container");
+    </script>
+
+    <style>
+
+        article {
+            color: green;
+        }
+
+        header, footer, article, section, nav, menu {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+<article>
+    I'm an article
+</article>
+
+<container>
+    I'm container
+</container>
+
+<figure>
+    <img data-description="homer" id="homer" src="homer.png" alt="Homer Simpson">
+    <figcaption><p>This is <mark>Homer</mark> <small>Wikipedia</small></p></figcaption>
+</figure>
+
+<input type="range" min="0" max="100" step="10">
+
+<div contenteditable="true">
+    <!--This is some text.-->
+    <li>To Dos</li>
+</div>
+
+<script>
+//    alert(document.getElementById("homer").getAttribute("data-description"));
+</script>
+
+
+</body>
+</html>
