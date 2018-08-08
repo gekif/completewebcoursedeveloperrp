@@ -11,3 +11,4 @@ bootstrapweb/
 *.gitignore
 *.mp4
 *.3gp
+!catatan.txt
