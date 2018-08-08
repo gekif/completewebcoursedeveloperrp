@@ -3,7 +3,7 @@
 <footer class="footer">
 
     <div class="container">
-        <p>&copy; Website Kyuu 2018</p>
+        <p>&copy; Website Kyuu <?php echo date("Y");?></p>
     </div>
 
 </footer>
@@ -19,12 +19,13 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="loginModelTitle">Login</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+<!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                    <span aria-hidden="true">&times;</span>-->
+<!--                </button>-->
             </div>
 
             <div class="modal-body">
+                <div class="alert alert-danger" id="loginAlert"></div>
                 <form>
                     <input type="hidden" id="loginActive" name="loginActive" value="1">
                     <fieldset class="form-group">
@@ -71,7 +72,12 @@
             url: "actions.php?action=loginSignup",
             data: "email=" + $("#email").val() + "&password=" + $("#password").val() + "&loginActive=" + $("#loginActive").val(),
             success: function (result) {
-                alert(result);
+                if (result == "1") {
+                    window.location.assign("http://localhost/13-FinalProject/");
+                } else {
+                    $("#loginAlert").html(result).show();
+
+                }
             }
         });
     });
